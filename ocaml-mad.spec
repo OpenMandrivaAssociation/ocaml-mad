@@ -9,7 +9,7 @@ Source0:        ocaml-mad-%{version}.tar.gz
 # wget http://downloads.sourceforge.net/project/savonet/ocaml-mad/%{version}/ocaml-mad-%{version}.tar.gz?use_mirror=freefr
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  ocaml-findlib
-BuildRequires:  libmad
+BuildRequires:  libmad-devel
 
 %description
 Bindings for the mad library which provides functions for encoding
@@ -29,8 +29,7 @@ developing applications that use %{name}.
 
 %build
 %configure
-make all opt
-make doc
+make
 
 %install
 rm -rf %{buildroot}
@@ -55,7 +54,7 @@ rm -rf %{buildroot}
 
 %files devel
 %defattr(-,root,root)
-%doc doc
+%doc doc/html
 %{_libdir}/ocaml/mad/*.a
 %{_libdir}/ocaml/mad/*.cmxa
 %{_libdir}/ocaml/mad/*.cmx

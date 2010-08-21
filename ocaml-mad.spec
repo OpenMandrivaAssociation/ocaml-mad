@@ -1,12 +1,11 @@
 Name:           ocaml-mad
-Version:        0.3.6
+Version:        0.4.0
 Release:        %mkrel 1
 Summary:        Bindings for the mad library
 License:        GPL
 Group:          Development/Other
 URL:            http://sourceforge.net/projects/savonet/files/
 Source0:        http://downloads.sourceforge.net/savonet/ocaml-mad/ocaml-mad-%{version}.tar.gz
-Patch0:         ocaml-mad-0.3.6-openfile.patch
 Patch1:         ocaml-mad-0.3.5-docblock.patch
 BuildRequires:  ocaml-findlib
 BuildRequires:  libmad-devel
@@ -27,7 +26,6 @@ developing applications that use %{name}.
 
 %prep
 %setup -q
-%patch0 -p1
 %patch1 -p1
 
 %build

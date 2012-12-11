@@ -1,6 +1,6 @@
 Name:           ocaml-mad
 Version:        0.4.0
-Release:        %mkrel 1
+Release:        2
 Summary:        Bindings for the mad library
 License:        GPL
 Group:          Development/Other
@@ -8,8 +8,8 @@ URL:            http://sourceforge.net/projects/savonet/files/
 Source0:        http://downloads.sourceforge.net/savonet/ocaml-mad/ocaml-mad-%{version}.tar.gz
 Patch1:         ocaml-mad-0.3.5-docblock.patch
 BuildRequires:  ocaml-findlib
+BuildRequires:  ocaml
 BuildRequires:  libmad-devel
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Bindings for the mad library which provides functions for encoding
@@ -61,4 +61,24 @@ rm -rf %{buildroot}
 %{_libdir}/ocaml/mad/*.cmxa
 %{_libdir}/ocaml/mad/*.cmx
 %{_libdir}/ocaml/mad/*.mli
+
+
+
+%changelog
+* Sat Aug 21 2010 Florent Monnier <blue_prawn@mandriva.org> 0.4.0-1mdv2011.0
++ Revision: 571674
+- updated to version 0.4.0
+
+* Mon Jan 25 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.3.6-1mdv2010.1
++ Revision: 496364
+- new version
+
+* Mon Aug 10 2009 Florent Monnier <blue_prawn@mandriva.org> 0.3.5-2mdv2010.0
++ Revision: 413705
+- patched openfile segfault
+
+* Sat Aug 01 2009 Florent Monnier <blue_prawn@mandriva.org> 0.3.5-1mdv2010.0
++ Revision: 405319
+- corrected deps
+- import ocaml-mad
 

@@ -1,6 +1,6 @@
 Name:           ocaml-mad
 Version:        0.4.0
-Release:        2
+Release:        3
 Summary:        Bindings for the mad library
 License:        GPL
 Group:          Development/Other

@@ -4,7 +4,7 @@ Release:        3
 Summary:        Bindings for the mad library
 License:        GPL
 Group:          Development/Other
-URL:            http://sourceforge.net/projects/savonet/files/
+URL:            https://sourceforge.net/projects/savonet/files/
 Source0:        http://downloads.sourceforge.net/savonet/ocaml-mad/ocaml-mad-%{version}.tar.gz
 Patch1:         ocaml-mad-0.3.5-docblock.patch
 BuildRequires:  ocaml-findlib
